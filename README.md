@@ -35,7 +35,7 @@ node server.js
 
 ## Live demo
 
-You can find a live demo of this application at [training.demo.teech.io](http://training.demo.teech.io)
+You can find a live demo of this application at <a href="http://training.demo.teech.io" target="_blank">training.demo.teech.io</a>
 
 ## Documentation
 
