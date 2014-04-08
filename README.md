@@ -1,4 +1,4 @@
-# Training web application demo
+# Educational web app demo
 
 This simple Angular JS application demonstrates an example of a JS web application built on top of the Teech.io platform.
 
@@ -6,6 +6,8 @@ This simple Angular JS application demonstrates an example of a JS web applicati
 * The lesson materials and the quizzes are shaped using the materials endpoint http://teech.io/docs/rest-api/#materials-api
 * Starting from each quiz, an assignment it's created using the assignments endpoint http://teech.io/docs/rest-api/#assignments-api
 * Each student submission it's registered using the submissions endpoint http://teech.io/docs/rest-api/#submissions-api and assessed using an assessment rule stored using the assessments endpoint http://teech.io/docs/rest-api/#assessments-api and attacched to the correspondant assignment
+
+![Alt text](/app/assets/images/screens/insights.jpg "Insights screenshot")
 
 ## Getting started
 
@@ -30,6 +32,10 @@ And finally run the server:
 ```
 node server.js
 ```
+
+## Live demo
+
+You can find a live demo of this application at [training.demo.teech.io](http://training.demo.teech.io)
 
 ## Documentation
 
