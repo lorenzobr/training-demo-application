@@ -1,0 +1,301 @@
+/* Copyright © 2013 [Project_Name]
+ *
+ * Version: 1.0.0
+ * [Project_URL]
+ */
+
+/* Table of Content
+==================================================
+
+	0: VARIABLES
+ 	1: GLOBALS
+ 	2: HELPERS
+ 	3: PAGE STRUCTURE
+ 	4: PAGE COMPONENTS
+ 	5: OVERRIDES
+ 	
+
+/* 0 := VARIABLES
+================================================== */
+@images-path: '';
+
+@pink: #f1644d;
+@turquoise: #25b3ac;
+
+@dark: #2d373f;
+@grey: #e4e4e4;
+
+@green: #57cd77;
+@yellow: #ffeb26;
+@red: #F04848;
+
+@textprimary: #444;
+
+/* 1 := GLOBALS
+================================================== */
+@import '/css/utils/unsemantic.grid.css';
+
+img, iframe {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	color: @turquoise;
+
+	&:hover, &:active, &:focus {
+		color: @pink;
+		text-decoration: none;
+		outline: none;
+	}
+}
+
+p {
+	font-weight: 300;
+}
+
+/* 2 := HELPERS
+================================================== */
+.btn {
+	text-transform: uppercase;
+
+	&.btn-default {
+		color: darken(@grey, 20%);
+		border-width: 2px;
+		border-color: darken(@grey, 4%);
+
+		a { color: darken(@grey, 20%) }
+
+		&:hover {
+			color: #fff;
+			background-color: @pink;
+			border-color: @pink;
+
+			a { color: #fff }
+		}
+	}
+
+	&.btn-primary {
+		background-color: @turquoise;
+		border-color: @turquoise;
+
+		&:hover {
+			background-color: darken(@turquoise, 15%);
+			border-color: darken(@turquoise, 15%);
+		}
+	}
+}
+
+/* 3 := PAGE STRUCTURE
+================================================== */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#site-header 
+{
+	.logo {
+		display: block;
+		float: left;
+		background-color: @pink;
+		width: 85px;
+		padding: 10px;
+	}
+
+	#main-nav nav {
+		a {
+			display: block; 
+			float: right;
+			font-size: 12px;
+			text-transform: uppercase;
+			border-bottom: 1px solid @grey;
+			padding: 10px;
+
+			&.profile { 
+				color: @textprimary;
+				border-right: 1px solid @grey;
+			}
+		}
+	}
+}
+
+/* 4 := PAGE COMPONENTS
+================================================== */
+#home-content 
+{
+	background-color: @grey;
+	padding: 40px 0;
+	margin: 20px 0;
+
+	.lesson .grid-content {
+		background-color: #fff;
+		overflow: hidden;
+
+		header a { color: @textprimary }
+
+		.lesson-description {
+			display: block;
+			padding: 20px;
+
+			h1 {
+				margin-top: 0;
+			}
+
+			p.description {
+				font-style: italic;
+			}
+		}
+
+		.actions-container {
+			display: block;
+			text-align: center;
+			margin-bottom: 25px;
+			overflow: hidden;
+
+			button {
+				margin: 0 5px;
+				i {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}
+
+#insights-content 
+{
+	#chart {
+		text-align: center;
+		margin-top: 30px;
+
+		.inner-container {
+			background-color: lighten(@grey, 8%);
+			border-bottom: 3px solid @grey;
+			padding: 20px;
+
+			.rendered-chart {
+				background-color: #fff;
+				padding: 20px;
+			}
+		}
+	}
+}
+
+#lesson-content 
+{
+	#video {
+		display: block;
+		text-align: center;
+		background-color: #212121;
+		padding: 40px;
+
+		iframe { min-height: 450px }
+	}
+
+	.actions-container {
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+}
+
+#exam-content 
+{
+	#exam-assignments {
+		div.assignment {
+			background-color: lighten(@grey, 8%);
+			border-bottom: 3px solid @grey;
+			padding: 15px 10px;
+			margin: 20px 0;
+
+			h3 {
+				display: block;
+				color: lighten(@textprimary, 10%);
+				text-align: center;
+				margin-bottom: 20px;
+			}
+		}
+
+		ul {
+			&, li { list-style: none; padding: 0; margin: 0 }
+
+			li {
+				div.inner-container {
+					background-color: @grey;
+					margin: 15px;
+					overflow: hidden;
+				}
+
+				input[type="radio"] { display: none }
+				div.radio { padding-left: 0; margin: 0 }
+
+				span.nindex {
+					display: block;
+					float: left;
+					color: darken(@grey, 30%);
+					font-size: 25px;
+					font-weight: bold;
+					background-color: darken(@grey, 10%);
+					padding: 10px 15px;
+				}
+
+				label {
+					display: inline-block;
+					color: darken(@grey, 45%);
+					padding: 10px;
+					padding-top: 15px;
+				}
+
+				&:hover, &.selected {
+					cursor: pointer;
+
+					div.inner-container { background-color: @turquoise }
+					span.nindex { color: darken(@turquoise, 20%); background-color: darken(@turquoise, 10%) }
+					label { color: #fff }
+				}
+			}
+		}
+
+		div.submit-button {
+			display: block;
+			text-align: center;
+			margin: 30px 0;
+
+			button {
+				font-size: 24px;
+				padding: 10px 30px;
+
+				i { margin-right: 15px }
+			}
+		}
+	}
+
+	#certificate {
+		text-align: center;
+		background-color: lighten(@grey, 8%);
+		border-bottom: 3px solid @grey;
+		padding: 40px;
+
+		h1 {
+			color: lighten(@textprimary, 10%);
+			margin-bottom: 20px;
+
+			span.score {
+				color: @red;
+				&.passed { color: @green }
+			}
+		}
+
+		#results-chart {
+			margin-bottom: 20px;
+		}
+
+		.result-info {
+			display: block;
+			font-size: 24px;
+		}
+	}
+}
+
+/* 5 := OVERRIDES
+================================================== */

@@ -1,0 +1,34 @@
+doctype
+html
+	head
+		title Training App
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic', type='text/css')
+		link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css")
+		link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/style.css")
+
+	body(id="", class=['fluid'], data-ng-app="trainingApp", data-basic-styles="")
+		div(id="wrap", data-ng-controller="GlobalController")
+			header#site-header
+				div.grid-container
+					div.grid-30
+						div.logo: a(href="/"): img(src="images/logo.png")
+					div#main-nav.grid-70
+						nav 
+							a(href="", ng-click="logout()") <i class="fa fa-sign-out"></i> sign out
+							a(href="", class="profile") Hello {[ loggedinUser ]}
+			div(id="content")
+				div(data-ng-view="")
+			footer#site-footer
+
+		script(src="//code.jquery.com/jquery-1.10.2.min.js")
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js")
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.7/highcharts.js")
+
+		script(src="js/libs.js")
+		script(src="js/main.js")
+
+block scripts

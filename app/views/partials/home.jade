@@ -1,0 +1,13 @@
+div(id="home-content", class="section", data-body-id="")
+	div.grid-container
+		div(class="lesson grid-33 mobile-grid-100", data-ng-repeat="lesson in lessons")
+			div.grid-content
+					header
+						a(href="#/lesson/{[ lesson._id ]}")
+							img(ng-src="{[ lesson.cover ]}")
+							div.lesson-description
+								h1 {[ lesson.title ]}
+								p.description {[ lesson.description ]}
+					div.actions-container
+						button(class="btn btn-default"): a(href="#/lesson/{[ lesson._id ]}") <i class="fa fa-folder-open"></i> open course
+						button(class="btn btn-default"): a(href="#/insights/{[ lesson._id ]}") <i class="fa fa-folder-open"></i> view insights

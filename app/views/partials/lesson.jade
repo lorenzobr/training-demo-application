@@ -1,0 +1,7 @@
+div(id="lesson-content", class="section", data-body-id="")
+	div#video
+		div.grid-container
+			div(class="grid-100 mobile-grid-100")
+				iframe(width="560", height="315", data-ng-src="{[ trustSrc(embeddedVideo) ]}", frameborder="0", allowfullscreen)
+	div.actions-container
+		a(href="#/exam/{[ lesson._id ]}", class="btn btn-default btn-lg") skip to exam <i class="fa fa-angle-right fa-align-right"></i>

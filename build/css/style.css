@@ -1,0 +1,254 @@
+@import '/css/utils/unsemantic.grid.css';
+/* Copyright © 2013 [Project_Name]
+ *
+ * Version: 1.0.0
+ * [Project_URL]
+ */
+/* Table of Content
+==================================================
+
+	0: VARIABLES
+ 	1: GLOBALS
+ 	2: HELPERS
+ 	3: PAGE STRUCTURE
+ 	4: PAGE COMPONENTS
+ 	5: OVERRIDES
+ 	
+
+/* 0 := VARIABLES
+================================================== */
+/* 1 := GLOBALS
+================================================== */
+img,
+iframe {
+  width: 100%;
+  height: auto;
+}
+a {
+  color: #25b3ac;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #f1644d;
+  text-decoration: none;
+  outline: none;
+}
+p {
+  font-weight: 300;
+}
+/* 2 := HELPERS
+================================================== */
+.btn {
+  text-transform: uppercase;
+}
+.btn.btn-default {
+  color: #b1b1b1;
+  border-width: 2px;
+  border-color: #dadada;
+}
+.btn.btn-default a {
+  color: #b1b1b1;
+}
+.btn.btn-default:hover {
+  color: #fff;
+  background-color: #f1644d;
+  border-color: #f1644d;
+}
+.btn.btn-default:hover a {
+  color: #ffffff;
+}
+.btn.btn-primary {
+  background-color: #25b3ac;
+  border-color: #25b3ac;
+}
+.btn.btn-primary:hover {
+  background-color: #18746f;
+  border-color: #18746f;
+}
+/* 3 := PAGE STRUCTURE
+================================================== */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#site-header .logo {
+  display: block;
+  float: left;
+  background-color: #f1644d;
+  width: 85px;
+  padding: 10px;
+}
+#site-header #main-nav nav a {
+  display: block;
+  float: right;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px;
+}
+#site-header #main-nav nav a.profile {
+  color: #444444;
+  border-right: 1px solid #e4e4e4;
+}
+/* 4 := PAGE COMPONENTS
+================================================== */
+#home-content {
+  background-color: #e4e4e4;
+  padding: 40px 0;
+  margin: 20px 0;
+}
+#home-content .lesson .grid-content {
+  background-color: #fff;
+  overflow: hidden;
+}
+#home-content .lesson .grid-content header a {
+  color: #444444;
+}
+#home-content .lesson .grid-content .lesson-description {
+  display: block;
+  padding: 20px;
+}
+#home-content .lesson .grid-content .lesson-description h1 {
+  margin-top: 0;
+}
+#home-content .lesson .grid-content .lesson-description p.description {
+  font-style: italic;
+}
+#home-content .lesson .grid-content .actions-container {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+#home-content .lesson .grid-content .actions-container button {
+  margin: 0 5px;
+}
+#home-content .lesson .grid-content .actions-container button i {
+  margin-right: 8px;
+}
+#insights-content #chart {
+  text-align: center;
+  margin-top: 30px;
+}
+#insights-content #chart .inner-container {
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #e4e4e4;
+  padding: 20px;
+}
+#insights-content #chart .inner-container .rendered-chart {
+  background-color: #fff;
+  padding: 20px;
+}
+#lesson-content #video {
+  display: block;
+  text-align: center;
+  background-color: #212121;
+  padding: 40px;
+}
+#lesson-content #video iframe {
+  min-height: 450px;
+}
+#lesson-content .actions-container {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+#exam-content #exam-assignments div.assignment {
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #e4e4e4;
+  padding: 15px 10px;
+  margin: 20px 0;
+}
+#exam-content #exam-assignments div.assignment h3 {
+  display: block;
+  color: #5e5e5e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#exam-content #exam-assignments ul,
+#exam-content #exam-assignments ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#exam-content #exam-assignments ul li div.inner-container {
+  background-color: #e4e4e4;
+  margin: 15px;
+  overflow: hidden;
+}
+#exam-content #exam-assignments ul li input[type="radio"] {
+  display: none;
+}
+#exam-content #exam-assignments ul li div.radio {
+  padding-left: 0;
+  margin: 0;
+}
+#exam-content #exam-assignments ul li span.nindex {
+  display: block;
+  float: left;
+  color: #989898;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #cbcbcb;
+  padding: 10px 15px;
+}
+#exam-content #exam-assignments ul li label {
+  display: inline-block;
+  color: #717171;
+  padding: 10px;
+  padding-top: 15px;
+}
+#exam-content #exam-assignments ul li:hover,
+#exam-content #exam-assignments ul li.selected {
+  cursor: pointer;
+}
+#exam-content #exam-assignments ul li:hover div.inner-container,
+#exam-content #exam-assignments ul li.selected div.inner-container {
+  background-color: #25b3ac;
+}
+#exam-content #exam-assignments ul li:hover span.nindex,
+#exam-content #exam-assignments ul li.selected span.nindex {
+  color: #145e5b;
+  background-color: #1c8983;
+}
+#exam-content #exam-assignments ul li:hover label,
+#exam-content #exam-assignments ul li.selected label {
+  color: #ffffff;
+}
+#exam-content #exam-assignments div.submit-button {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+#exam-content #exam-assignments div.submit-button button {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+#exam-content #exam-assignments div.submit-button button i {
+  margin-right: 15px;
+}
+#exam-content #certificate {
+  text-align: center;
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #e4e4e4;
+  padding: 40px;
+}
+#exam-content #certificate h1 {
+  color: #5e5e5e;
+  margin-bottom: 20px;
+}
+#exam-content #certificate h1 span.score {
+  color: #f04848;
+}
+#exam-content #certificate h1 span.score.passed {
+  color: #57cd77;
+}
+#exam-content #certificate #results-chart {
+  margin-bottom: 20px;
+}
+#exam-content #certificate .result-info {
+  display: block;
+  font-size: 24px;
+}
+/* 5 := OVERRIDES
+================================================== */
