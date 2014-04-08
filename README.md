@@ -7,7 +7,7 @@ This simple Angular JS application demonstrates an example of a JS web applicati
 * Starting from each quiz, an assignment it's created using the assignments endpoint http://teech.io/docs/rest-api/#assignments-api
 * Each student submission it's registered using the submissions endpoint http://teech.io/docs/rest-api/#submissions-api and assessed using an assessment rule stored using the assessments endpoint http://teech.io/docs/rest-api/#assessments-api and attacched to the correspondant assignment
 
-![Alt text](/app/assets/images/screens/insights.jpg "Insights screenshot")
+![Alt text](https://raw.githubusercontent.com/teechio/training-demo-application/master/app/assets/images/screens/insights.png "Insights screenshot")
 
 ## Getting started
 
