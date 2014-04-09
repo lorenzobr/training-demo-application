@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "52dd417ce4b00f9da019a736",
+    "description": "From the formation of the earth and the emergence of life, to the advance of man and the growth of civilization",
+    "title": "History of the World - History Channel",
+    "material": "52dd4051e4b00f9da019a72f",
+    "type": "teaching_video",
+    "module": "52dd3555e4b00f9da019a70f"
+  },
+  {
+    "_id": "52de923de4b03b43042fef3e",
+    "description": "Rome is the capital of:",
+    "title": "Italy Capital",
+    "material": "52dd5cd9e4b00f9da019a793",
+    "assessment": "52dd3555e4b00f9da019a716",
+    "type": "exam",
+    "module": "52dd3555e4b00f9da019a70f"
+  },
+  {
+    "_id": "52de924ce4b03b43042fef40",
+    "description": "Alaska is a U.S. state situated in the northwest extremity of the North American continent.",
+    "title": "Alaska",
+    "material": "52dd5db5e4b00f9da019a797",
+    "assessment": "52dd3555e4b00f9da019a716",
+    "type": "exam",
+    "module": "52dd3555e4b00f9da019a70f"
+  },
+  {
+    "_id": "52de9258e4b03b43042fef42",
+    "description": "London is the capital of:",
+    "title": "UK Capital",
+    "material": "52de4590e4b00f9da019a7a4",
+    "assessment": "52dd3555e4b00f9da019a716",
+    "type": "exam",
+    "module": "52dd3555e4b00f9da019a70f"
+  }
+]

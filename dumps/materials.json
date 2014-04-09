@@ -1,0 +1,45 @@
+[
+  {
+    "_id": "52dd4051e4b00f9da019a72f",
+    "description": "From the formation of the earth and the emergence of life, to the advance of man and the growth of civilization",
+    "source": "http://www.youtube.com/watch?v=b667Qs1QTVU",
+    "title": "History of the World - History Channel",
+    "type": "media",
+    "source_meta": {
+      "taxonomy": "youtube",
+      "vid": "b667Qs1QTVU"
+    }
+  },
+  {
+    "_id": "52dd5cd9e4b00f9da019a793",
+    "description": "Rome is the capital of:",
+    "choices": {
+      "Italy": 4,
+      "Australia": 0,
+      "United Kingdom": 0
+    },
+    "title": "Italy Capital",
+    "type": "multiple-choice"
+  },
+  {
+    "_id": "52dd5db5e4b00f9da019a797",
+    "description": "Alaska is a U.S. state situated in the northwest extremity of the North American continent.",
+    "choices": {
+      "false": 0,
+      "true": 4
+    },
+    "title": "Alaska",
+    "type": "true-false"
+  },
+  {
+    "_id": "52de4590e4b00f9da019a7a4",
+    "description": "London is the capital of:",
+    "choices": {
+      "France": 0,
+      "Australia": 0,
+      "United Kingdom": 4
+    },
+    "title": "UK Capital",
+    "type": "multiple-choice"
+  }
+]
